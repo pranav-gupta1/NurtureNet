@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker | NurtureNet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mood-tracker.html">Mood Tracker</a>
+            <a href="eco-tips.html">Eco-Tips</a>
+            <a href="sustainability-projects.html">Sustainability Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div>
+                <h2>Mood Tracker</h2>
+                <input type="number" id="day" name="day" placeholder="Day (e.g., 1)" min="1" max="31">
+                <select id="mood" name="mood">
+                    <option value="Happy">Happy</option>
+                    <option value="Okay">Okay</option>
+                    <option value="Sad">Sad</option>
+                </select>
+                <button onclick="recordMood()">Record Mood</button>
+                <button onclick="showHistory()">Show History</button>
+                <div id="moodHistory"></div>
+            </div>
+            <div class="image-container">
+                <img src="images/page2.jpg" alt="Mood Tracker Image">
+            </div> 
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
